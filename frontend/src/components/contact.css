@@ -1,0 +1,142 @@
+/* PAGE */
+.contact-page{
+  width:100%;
+  min-height:100vh;
+  background:#000;
+  color:#fff;
+}
+
+/* WRAPPER */
+.contact-wrapper{
+  width:100%;
+  display:flex;
+  align-items:center;
+  padding:60px;
+}
+
+/* LEFT FORM */
+.contact-left{
+  width:55%;
+  display:flex;
+  justify-content:center;
+}
+
+.contact-form-container{
+  width:100%;
+  max-width:600px;
+}
+
+/* INPUT ROW */
+.row{
+  display:flex;
+  gap:20px;
+  margin-bottom:20px;
+}
+
+/* INPUT */
+.contact-form-container input,
+.contact-form-container textarea{
+  width:100%;
+  padding:14px;
+  background:#1e2329;
+  border:none;
+  border-radius:8px;
+  color:#fff;
+  font-size:14px;
+}
+
+/* TEXTAREA */
+.contact-form-container textarea{
+  height:160px;
+  resize:none;
+  margin-top:10px;
+}
+
+/* BUTTON */
+.send-btn{
+  margin-top:25px;
+  padding:12px 30px;
+  border:none;
+  border-radius:25px;
+  background:#2c3138;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* TURF INFO */
+.turf-info{
+  margin-top:40px;
+}
+
+/* RIGHT SECTION */
+.contact-page {
+  background: #000;
+  min-height: 100vh;
+  color: white;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: flex-start; /* ✅ IMPORTANT */
+  justify-content: space-between;
+  padding: 50px;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE WRAPPER */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* IMAGE */
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+
+  /* 🔥 Smooth fade like first image */
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+}
+
+/* 🔥 GLOW EFFECT (blue/purple like first image) */
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.4), transparent 70%);
+  filter: blur(80px);
+  z-index: 1;
+}
+
+/* OPTIONAL: extra dark fade at bottom */
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 3;
+}

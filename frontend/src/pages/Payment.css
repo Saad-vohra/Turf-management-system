@@ -1,0 +1,149 @@
+
+
+
+.payment-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f7f4, #e8f5e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.payment-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.payment-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1b5e20;
+}
+
+.form-grid {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-grid input,
+.section select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-grid input:focus,
+.section select:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.extras {
+  background: #f1f8f4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.extras label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.amount-box {
+  background: #e8f5e9;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.amount-box span {
+  font-size: 14px;
+  color: #2e7d32;
+}
+
+.amount-box h3 {
+  font-size: 26px;
+  margin-top: 5px;
+  color: #1b5e20;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pay-btn:hover {
+  background: #145a1a;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+
+/* HOME BUTTON */
+#home-btn {
+  /* all: unset; */
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 7px;
+  border-radius: 5px;
+
+  background: #282c2f96;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+#home-btn:hover {
+  background: #00c853;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* CLICK EFFECT */
+#home-btn:active {
+  transform: scale(0.95);
+}
+

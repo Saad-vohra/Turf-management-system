@@ -1,0 +1,73 @@
+.booking-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 5px 12px;
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.card-body p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.payment span {
+  font-weight: bold;
+}
+
+.card-actions {
+  margin-top: 15px;
+}
+
+.ticket-btn {
+  background: #0a7cff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ticket-btn:hover {
+  background: #005ad6;
+}
+
+
+#all-filter-button {
+  padding: 8px 16px;
+  border: 1px solid #0a7cff;
+  background: white;
+  color: #0a7cff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#all-filter-button:hover {
+  background: #0a7cff;
+  color: white;
+}
+
+.active-filter {
+  background: #0a7cff;
+  color: white;
+}

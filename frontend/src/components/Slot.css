@@ -1,0 +1,14 @@
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.slot-btn {
+  padding: 10px;
+  border: none;
+  background: #1f7a4d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

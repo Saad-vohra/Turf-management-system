@@ -1,0 +1,149 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  background-image: url("https://d3mt0x61rkkfy3.cloudfront.net/page_element/3621/original/bg-image/1705913100-box-cricket-header-min-1.jpeg?v=f538cc301897917af2ad2f4ad45abee4");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  overflow: hidden;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: white;
+  animation: slideFade 1s ease;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #7cff3a;
+}
+
+.hero-content p {
+  margin: 20px 0 30px;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn {
+  background: #7cff3a;
+  border: none;
+  padding: 12px 26px;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #7cff3a;
+  color: white;
+  padding: 12px 26px;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: #7cff3a;
+  color: black;
+}
+
+/* Animation */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding-left: 30px;
+    height: 80vh;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+}
+
+
+
+
+
+
+.hero-content span {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.hero-title{
+  font-size:48px;
+  font-weight:700;
+}
+
+.slider{
+  display:inline-block;
+  height:60px;
+  overflow:hidden;
+  vertical-align:bottom;
+  margin:0 10px;
+}
+
+.slide-track{
+  display:flex;
+  flex-direction:column;
+  animation:slideWords 8s infinite;
+}
+
+.slide-track span{
+  height:60px;
+  line-height:60px;
+  color:#22c55e;
+  font-weight:bold;
+}
+
+/* sliding animation */
+
+@keyframes slideWords{
+  0%{transform:translateY(0);}
+  25%{transform:translateY(-60px);}
+  50%{transform:translateY(-120px);}
+  75%{transform:translateY(-180px);}
+  100%{transform:translateY(0);}
+}

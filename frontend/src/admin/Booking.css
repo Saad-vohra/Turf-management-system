@@ -1,0 +1,82 @@
+.booking-container {
+  padding: 25px;
+  background: #f4f6fa;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.booking-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.booking-table th {
+  background: #1e293b;
+  color: white;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.badge.PAID {
+  background: #16a34a;
+  color: white;
+}
+
+.badge.PENDING {
+  background: #facc15;
+}
+
+.badge.checked {
+  background: #22c55e;
+  color: white;
+}
+
+.badge.not {
+  background: #ef4444;
+  color: white;
+}
+
+.actions button {
+  margin: 3px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .checkin {
+  background: #2563eb;
+  color: white;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

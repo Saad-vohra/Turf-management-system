@@ -1,0 +1,119 @@
+/* ===== MAIN CONTAINER ===== */
+.admin-container {
+  padding: 25px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== TITLE ===== */
+.admin-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ===== CARD STYLE ===== */
+.admin-form,
+.offline-form {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== INPUTS ===== */
+.admin-form select,
+.admin-form input,
+.offline-form input,
+.offline-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  min-width: 140px;
+  transition: 0.2s;
+}
+
+.admin-form input:focus,
+.admin-form select:focus,
+.offline-form input:focus {
+  border-color: #2fba10;
+  box-shadow: 0 0 5px rgba(47,186,16,0.3);
+}
+
+/* ===== TOTAL ===== */
+.admin-container h3 {
+  margin: 10px 0 20px;
+  font-weight: 600;
+  color: #2fba10;
+}
+
+/* ===== SLOT GRID ===== */
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+/* ===== SLOT WRAPPER ===== */
+.slot-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ===== SLOT BUTTON ===== */
+.slot-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #e6f9ea;
+  color: #1e7e34;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slot-btn:hover {
+  background: #2fba10;
+  color: white;
+}
+
+/* ===== BLOCKED SLOT ===== */
+.slot-btn.blocked {
+  background: #ffdddd;
+  color: #c0392b;
+  cursor: not-allowed;
+}
+
+/* ===== UNBLOCK BUTTON ===== */
+.unblock-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.unblock-btn:hover {
+  background: #e60000;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .admin-form,
+  .offline-form {
+    flex-direction: column;
+  }
+}
